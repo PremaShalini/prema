@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+<title> login form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <!-- favicon awsome icon link-->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<style>
+
+body{
+margin:0;
+padding:0;
+font-family:monsterral;
+
+height:500px;
+overflow:hidden;
+}
+.center h1{
+text-decoration:underline;
+text-align:center;
+}
+form.text_field{
+position:relative;
+border-bottom:2px solid::black;
+margin:50px 0;
+}
+.center form{
+padding:0 40px;;
+box-sizing:border-box;
+}
+.center{
+position:absolute;
+top:60%;
+left:50%;
+width:500px;
+height:500px;
+transform:translate(-50%,-50%);
+background:white;
+border-radius:10px;
+}
+form.text_field{
+position:relative;
+border-bottom:2px solid black;
+margin:30px 0;
+}
+.text_field input{
+width:100%;
+padding:2px;
+height:40px;
+font-size:13px;
+outline:none;
+}
+.Pass:hover{
+text-decoration:underline;
+}
+input[type="Submit"]{
+width:100%;
+height:30px;
+border:1px solid;
+border-radius:25px;
+}
+input[type]:hover{
+background-color:pink;
+border-coler:red;
+cursor:pointer;
+}
+.icon  i{
+position: absolute;
+}
+i{
+padding-left:55px;
+margin-left:55px;
+margin-top:5px;
+}
+h2
+{
+font-weight:bold;
+font-size:25px;
+color:black;
+margin:0px;
+
+padding:0px;
+}
+.mobile-container {
+  margin: 20px;
+  background-color:grey ;
+  color: blue;
+  border-radius: 10px;
+}
+
+.topnav {
+  border:0.1px solid #F0EBE3 ;
+  background-color:white;
+  overflow: hidden;
+  position: relative;
+}
+
+.topnav #myLinks{
+ background-color:white;
+ color:black;
+ display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background-color: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+</style>
+
+<body>
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active"><h2>BLACKLANE</h2></a>
+
+  <div id="myLinks" >
+  <ul class="dropdown">
+  
+    <li style="list-style-type:none;"><a href="#contact" style="background-color:white; color:black;"><i class="fas fa-user"></i>Sign in</a></li>
+    <li style="list-style-type:none;">
+  </div>
+  </div>
+  </div>
+<!-- Sign in Form -->
+<div class="center">
+<h1>Sign in</h1>
+<p style="text-align:center;font-weight:bold;">Enter your email to log in or create an account</p>
+<form method="post">
+<div class="text_field">
+<input type="text" placeholder="Enter Username">
+</div>
+
+<br>
+<div class="text-field">
+<input type="Password" placeholder="Enter password">
+</div>
+<br>
+<div class="Pass">Forgot Password?</div><br>
+<input type="Submit" value="Login">
+<p style="text-align:center;font-weight:bold;">or</p>
+  <!-- facebook icon -->
+<div class="icon">
+
+<a href="https://www.facebook.com/index.php"><i class="fab fa-facebook">
+Continue with Facebook</a></i>
+</div>
+ </form>
+ 
+ <script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+ 
+ </body>
+</html>
